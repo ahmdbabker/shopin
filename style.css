@@ -1,0 +1,645 @@
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Cairo SemiBold";
+}
+
+
+.container
+{
+    padding:0 4%
+}
+
+.top-nav
+{
+    background-color: rgb(49, 47, 47);
+    color: white;
+    height: 50px;
+}
+
+.two-sides
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navs ul
+{
+    list-style-type: none;
+    margin-top:5px;
+    font-size: 17px;
+}
+
+.navs ul li
+{
+    padding:7px;
+    display: inline-block;
+}
+
+.logo 
+{
+    margin-top: 8px;
+    position: relative;
+    padding-right:13px;
+}
+
+
+
+.tak-two
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.searching
+{
+    width:50%;
+    text-align: center;
+}
+.searching input
+{
+    margin-top:50px;
+    padding:10px;
+    width: 100%;
+    border: 1px solid lightgray;
+}
+
+.searching i
+{
+    position: relative;
+    top:0px;
+    right: 46%;
+    top:-40px;
+    color: rgb(175, 173, 173);
+}
+
+.icons
+{
+    margin-top:55px
+}
+
+.icons i
+{
+    padding:0 10px;
+    font-size: 22px;
+}
+
+.deals
+{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("back.jpg");
+    background-position: center;
+    background-size: cover;
+    height:480px;
+    text-align: center;
+    box-shadow: 0px 8px 6px 4px rgb(196, 195, 195);
+}
+
+.deals p 
+{
+    text-align: center;
+    margin:auto;
+    display: block;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    border:8px solid white;
+    width: 45%;
+    position: relative;
+    top:16%;
+    padding:15px
+}
+
+.under
+{
+    margin-top:60px
+}
+
+.all-under
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.one
+{
+    width: 30%;
+}
+
+.item1
+{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("threemen.jpg");
+    background-position: center;
+    background-size: contain;
+    height:200px;
+    overflow:hidden;
+    cursor: pointer;
+}
+
+
+.item2
+{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("theewo.jpg");
+    background-size: contain;
+    background-position: center;
+    height:200px;
+    overflow:hidden;
+    cursor: pointer;
+}
+
+.item3
+{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("threeacc.jpg");
+    background-position: center;
+    background-size: contain;
+    height:200px;
+    overflow:hidden;
+    box-shadow: 0 10 20 25% #808080;
+    cursor: pointer;
+}
+
+.one p
+{
+    position: relative;
+    right: 80px;
+    top:70px;
+    width: 60%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border: 3px solid white;
+}
+
+
+ul
+{
+    list-style: none;
+    margin:0;
+    text-align: center;
+    font-size: 19px;
+    padding: 0;
+}
+
+.tabs-list li
+{
+    padding:15px 30px;
+    background-color: #FFF;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+    
+}
+
+.tabs-list .active,
+.tabs-list li:hover
+{
+    color:crimson
+}
+
+.tabs-list .active
+{
+    z-index: 2;
+}
+
+.content-list
+{
+    background-color: #FFF;
+    position: relative;
+}
+
+.content-list > div
+{
+    padding: 20px;
+    min-height: 200px;
+}
+
+.content-list > div:not(:first-child)
+{
+    display: none;
+}
+
+.item-pro
+{
+    width: 19%;
+    margin:50px 1px;
+    height: 270px;
+    line-height: 17px;
+    font-size: 17px;
+}
+
+.item-pro img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.slider
+{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;   
+    direction: ltr; 
+}
+
+.slider::-webkit-scrollbar{
+    display: none;
+}
+
+.slider .slide
+{
+    display: flex;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    transition: 0.3s left ease-in-out;
+}
+
+
+.slider .item
+{
+    margin-right: 10px;
+    max-width: 18%;
+}
+
+
+
+.slider .item:last-child{
+    margin-right: 0;
+}
+
+.ctrl
+{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.ctrl-btn
+{
+    padding: 20px 20px;
+    min-width: 50px;
+    background: #FFF;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -27.5px;
+}
+
+.ctrl-btn.pro-prev
+{
+    left: 0;
+}
+
+.ctrl-btn.pro-next
+{
+    right: 0;
+}
+
+.foter
+{
+    background-color: #312f2f;
+    height: 340px;
+    width: 100%;
+    overflow-y: hidden;
+    margin-top:40px
+}
+
+.al-dis
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foter .itt .oon
+{
+    color: white;
+    font-size: 30px;
+}
+
+.foter .itt ul
+{
+    list-style: none;
+    margin-top:35px
+}
+
+.foter .itt ul li
+{
+    padding:10px;
+    font-size: 18px;
+}
+
+
+
+@media screen and (max-width:700px)
+{
+ 
+    .container
+    {
+        padding:0%
+    }
+    
+    .top-nav
+    {
+        background-color: rgb(49, 47, 47);
+        color: white;
+        height: 70px;
+    }
+    
+    .two-sides
+    {
+        display: block;
+    }
+    
+    .navs ul
+    {
+        list-style-type: none;
+        margin-top:5px;
+        font-size: 14px;
+    }
+    
+    .navs ul li
+    {
+        padding: 0 6px;
+        display: inline-block;
+    }
+    
+    .logo 
+    {   
+        text-align: center;
+        margin-top: 5px;
+        position: relative;
+    }
+    
+    
+    .tak-two
+    {
+        display: block;
+    }
+    
+    .searching
+    {
+        width:100%;
+        text-align: center;
+    }
+    .searching input
+    {
+        margin-top:30px;
+        padding:10px;
+        width: 100%;
+        border: 1px solid lightgray;
+    }
+    
+    .searching i
+    {
+        position: relative;
+        right: 46%;
+        top:-32px;
+        color: rgb(175, 173, 173);
+    }
+    
+    .icons
+    {
+        margin:10px 0 ;
+        text-align: center;;
+    }
+    
+    .icons i
+    {
+        padding:10px;
+        margin:0 5px;
+        font-size: 22px;
+        border: 1px solid lightgray
+    }
+
+
+    .deals
+{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("back.jpg");
+    background-position: center;
+    background-size: cover;
+    height:430px;
+    text-align: center;
+    box-shadow: 0px 8px 6px 4px rgb(196, 195, 195);
+}
+
+.deals p 
+{
+    text-align: center;
+    margin:auto;
+    display: block;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border:8px solid white;
+    width: 98%;
+    position: relative;
+    top:16%;
+    padding:15px
+}
+
+.deals button
+{
+    margin-top:15px;
+    font-size:17px;
+}
+
+.under
+{
+    margin-top:60px
+}
+
+.all-under
+{
+    display: block;
+}
+
+.one
+{
+    width: 100%;
+    margin-top:7px
+}
+
+ul
+{
+    list-style: none;
+    margin:0;
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+}
+
+.tabs-list li
+{
+    padding:0px 4px ;
+    background-color: #FFF;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    cursor: pointer;
+    border-right: 1px solid lightgray;
+}
+
+.tabs-list .active,
+.tabs-list li:hover
+{
+    color:crimson
+}
+
+.tabs-list .active
+{
+    z-index: 2;
+}
+
+.content-list
+{
+    background-color: #FFF;
+    position: relative;
+}
+
+.content-list > div
+{
+    padding: 20px;
+    min-height: 200px;
+}
+
+.content-list > div:not(:first-child)
+{
+    display: none;
+}
+
+.item-pro
+{
+    width: 49%;
+    margin:50px 0px;
+    height: 270px;
+    line-height: 17px;
+    font-size: 17px;
+}
+
+.item-pro img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+.slider
+{
+    width: 100%;
+    height: 220px;
+    position: relative;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;   
+    direction: ltr; 
+}
+
+.slider::-webkit-scrollbar{
+    display: none;
+}
+
+.slider .slide
+{
+    display: flex;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    transition: 0.3s left ease-in-out;
+}
+
+
+.slider .item
+{
+    margin-right: 10px;
+    max-width: 30%;
+}
+
+
+
+.slider .item:last-child{
+    margin-right: 0;
+}
+
+.ctrl
+{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.ctrl-btn
+{
+    padding: 10px 5px;
+    min-width: 40px;
+    background: #FFF;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -27.5px;
+}
+
+.ctrl-btn.pro-prev
+{
+    left: 0;
+}
+
+.ctrl-btn.pro-next
+{
+    right: 0;
+}
+
+.foter
+{
+    background-color: #312f2f;
+    height: 300px;
+    width: 100%;
+    overflow-y: hidden;
+    margin-top:40px
+}
+
+.al-dis
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foter .itt .oon
+{
+    color: white;
+    font-size: 16px;
+}
+
+.foter .itt ul
+{
+    list-style: none;
+    margin-top:35px
+}
+
+.foter .itt ul li
+{
+    padding:5px;
+    font-size: 16px;
+}
+
+.tt .oon
+{
+    font-size: 16px;
+}
+
+.itt .hid
+{
+    display: none;
+}    
+}
